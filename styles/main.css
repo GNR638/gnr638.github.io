@@ -52,6 +52,27 @@ body{
 }
 
 /* Create a hamburger responsive layout of nav for max-width 600px */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    width: 50px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
 nav{
     box-sizing: border-box;
     background-color: #004f9f;
@@ -116,6 +137,14 @@ h3{
     color: #000000;
 }
 
+p{
+    line-height: 1.2rem;
+}
+
+li{
+    line-height: 1.2rem;
+}
+
 .section-content{
     width: 75%;
     margin: 0 auto;
@@ -141,7 +170,7 @@ h3{
 }
 
 .articles article{
-    width: 49%;
+    width: 45%;
 }
 
 #course-description p{
@@ -156,13 +185,13 @@ h3{
 }
 
 .info-card img{
-    width: 150px;
+    max-width: 120px;
     border-radius: 50%;
     margin: 1em 0;
 }
 
 .info-card p{
-    width: 150px;
+    max-width: 120px;
     text-align: center;
 }
 
@@ -205,4 +234,48 @@ footer{
     text-align: center;
     padding: 1em;
     color: black;
+    line-height: 1.5;
+}
+
+@media (max-width: 800px){
+    nav ul li a{
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 660px){
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    nav ul li{
+        margin: 0.5em 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .articles article{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .nav-open ul {
+        display: flex;
+    }
 }
