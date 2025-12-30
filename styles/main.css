@@ -1,0 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Create a hamburger responsive layout of nav for max-width 600px */
+nav{
+    box-sizing: border-box;
+    background-color: #004f9f;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 2;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.75em;
+}
+
+nav img{
+    flex: 1;
+    max-width: 4em;
+}
+
+header{
+    margin: 1em 0;
+}
+
+header h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 0.75rem 0;
+}
+
+header p{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: x-large;
+    padding: 0.75rem 0;
+}
+
+section{
+    padding: 1em 0;
+}
+
+section:nth-of-type(odd){
+    background-color: rgb(245, 233, 211);
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    color: #000000;
+}
+
+.section-content{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.section-content h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0.75rem 0;
+    color: #013264;
+}
+
+.section-content .articles{
+    padding: 0.75em 0;
+}
+
+.articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.articles article{
+    width: 49%;
+}
+
+#course-description p{
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    padding: 0.75rem 0;
+    line-height: 1.5;
+}
+
+.info-card{
+    margin: 0 1em 0 0;
+}
+
+.info-card img{
+    width: 150px;
+    border-radius: 50%;
+    margin: 1em 0;
+}
+
+.info-card p{
+    width: 150px;
+    text-align: center;
+}
+
+.information-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.specific-info{
+    font-weight: bold;
+}
+
+.course-info{
+    padding: 0 0 0.5rem 0;
+
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.styled-list{
+    list-style-type: disc;
+}
+
+.styled-sub-list{
+    list-style-type: circle;
+    margin-left: 1.5em;
+    margin-top: 0.5rem;
+}
+
+#honour-code p{
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    padding: 0.75rem 0;
+    line-height: 1.5;
+}
+
+footer{
+    text-align: center;
+    padding: 1em;
+    color: black;
+}
