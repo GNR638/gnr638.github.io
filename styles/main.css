@@ -254,6 +254,7 @@ footer{
 table{
     width: 75%;
     margin: 1em auto;
+    border-collapse: collapse;
 }
 
 th, td{
@@ -292,6 +293,79 @@ thead{
 @media (max-width: 800px){
     nav ul li a{
         font-size: 1.5em;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody, tr, td, th {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 0.5rem;
+        background: #fff;
+    }
+
+    th[scope="row"] {
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: left;
+        border-bottom: 2px solid #004f9f;
+        margin-bottom: 0.5rem;
+    }
+
+    td {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 0.5rem;
+        padding: 0.4rem 0;
+        margin-bottom: 0.5rem;
+    }
+
+    td:last-child {
+        border: none;
+    }
+
+    td::before {
+        position: static;
+        content: attr(data-label);
+        font-weight: bold;
+        color: #555;
+        white-space: wrap;
+    }
+
+    /* Exam & holiday rows */
+    .exam,
+    .holiday {
+        padding: 0.75rem;
+    }
+
+    .exam td,
+    .holiday td {
+        display: block;
+        padding-left: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .exam td::before,
+    .holiday td::before {
+        display: none;
+        content: none;;
     }
 }
 @media (max-width: 660px){
