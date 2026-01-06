@@ -367,6 +367,12 @@ thead{
         display: none;
         content: none;;
     }
+
+    .exam-range {
+        margin-top: 0.6rem;
+        font-weight: normal;
+        color: #555;
+    }
 }
 @media (max-width: 660px){
     .hamburger {
